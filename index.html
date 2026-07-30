@@ -41,10 +41,6 @@
     display:grid;
     grid-template-columns: 220px 1fr;
   }
-  @media (max-width: 680px){
-    .card{ grid-template-columns: 1fr; }
-    .side{ min-height: 140px !important; }
-  }
   .side{
     position:relative;
     background: #5676ff;
@@ -156,6 +152,27 @@
     font-size: 22px; margin: 0 0 8px; color: var(--ink);
   }
   .done p{ color: var(--muted); font-size: 14px; margin:0; }
+
+  @media (max-width: 680px){
+    body{ padding: 0; align-items: flex-start; }
+    .wrap{ max-width: 100%; }
+    .card{ grid-template-columns: 1fr; border-radius: 0; border:none; min-height: 100vh; }
+    .side{ min-height: 110px !important; padding: 20px; }
+    .side img{ max-width: 120px; }
+    .content{ padding: 28px 20px 32px; }
+    .logo-top img{ height: 24px; }
+    h1{ font-size: 25px; }
+    .subtitle{ font-size: 13.5px; }
+    .meta{ font-size: 12.5px; gap: 8px 16px; padding: 12px 0 18px; margin-bottom: 20px; }
+    .grid{ grid-template-columns: 1fr; gap: 0; }
+    .field{ margin-bottom: 14px; }
+    input{ font-size: 16px; padding: 12px 13px; }
+    button{ font-size: 15px; padding: 14px 18px; }
+  }
+  @media (max-width: 380px){
+    .content{ padding: 24px 16px 28px; }
+    h1{ font-size: 22px; }
+  }
 </style>
 </head>
 <body>
